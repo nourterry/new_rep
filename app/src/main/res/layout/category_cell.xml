@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<androidx.cardview.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_height="110dp"
+    app:cardElevation="8dp"
+    android:background="@android:color/white"
+    android:layout_marginTop="8dp"
+     android:layout_marginBottom="8dp"
+    app:cardCornerRadius="8dp"
+    >
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+       android:layout_marginBottom="16dp"
+
+      >
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guide_0.78h"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.78"/>
+        <TextView
+            android:id="@+id/text_sub1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:background="@drawable/crcle_textview"
+            android:text="W"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="8dp"
+            android:gravity="center"
+            android:textSize="40sp"
+            android:textColor="@android:color/white"/>
+        <TextView
+            android:id="@+id/name_category"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toEndOf="@id/text_sub1"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="30dp"
+            android:text="Work"
+            android:textSize="20sp"
+            android:textColor="@android:color/black"/>
+        <TextView
+            android:id="@+id/description_category"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="@id/name_category"
+            app:layout_constraintTop_toBottomOf="@id/name_category"
+            android:layout_marginTop="8dp"
+            android:text="Note for works Note for work Note for work "
+            android:ellipsize="end"
+            android:layout_marginEnd="20dp"
+            android:textSize="16sp"
+            android:layout_marginBottom="16dp"
+            />
+        <LinearLayout
+            android:id="@+id/linear_edit"
+            android:layout_width="30dp"
+            android:layout_height="0dp"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            android:background="@color/colorPrimary"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            >
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_edit"
+                android:layout_gravity="center"
+                android:layout_marginStart="8dp"/>
+        </LinearLayout>
+        <ImageView
+            android:id="@+id/img_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toStartOf="@id/linear_edit"
+            app:layout_constraintTop_toTopOf="parent"
+            android:src="@drawable/ic_delete"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="50dp"/>
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+</androidx.cardview.widget.CardView>
+</LinearLayout>
